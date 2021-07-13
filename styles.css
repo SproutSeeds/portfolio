@@ -1,0 +1,163 @@
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+/* https://css-tricks.com/snippets/css/complete-guide-grid/ */
+* {
+  box-sizing: border-box;
+  background-color: white;
+}
+hr {
+  opacity: 5%;
+}
+header div nav {
+  display: flex;
+  float: right;
+  font-size: 20px;
+}
+
+header div nav a {
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: black;
+  opacity: 50%;
+}
+a:active {
+  color: black;
+}
+
+.picture-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.about-me {
+  text-align: left;
+  padding: 2vw;
+  width: 50%;
+}
+main .about-me h2 {
+  text-align: center;
+}
+.bio {
+  padding: 1vw;
+  font-size: 1.5vw;
+}
+.locations {
+  transition: color 1s, font-size 1s;
+}
+.bio:hover .locations {
+  color: rgb(20, 45, 184);
+  font-size: 120%;
+}
+.contact {
+  margin-top: 5vw;
+}
+.contact nav {
+  text-align: center;
+}
+.contact nav a {
+  margin: 10vw;
+}
+
+.intro ul {
+  list-style-type: none;
+}
+.intro li:first-child {
+  text-align: right;
+  padding: 2%;
+  font-size: 2vw;
+}
+.intro li:nth-child(2) {
+  padding: 2%;
+  font-size: 2.5vw;
+}
+.intro li:nth-child(3) {
+  padding: 2%;
+  font-size: 2vw;
+  text-align: left;
+}
+#laugh {
+  transition: color 1s, font-size 1s;
+}
+#first:hover #laugh {
+  color: rgb(143, 3, 189);
+  font-size: 200%;
+}
+#jam {
+  transition: color 1s, font-size 1s;
+}
+#second:hover #jam {
+  color: rgb(16, 155, 21);
+  font-size: 200%;
+}
+#hug {
+  transition: color 1s, font-size 1s;
+}
+#third:hover #hug {
+  color: rgb(177, 19, 19);
+  font-size: 200%;
+}
+
+.intro h1 {
+  text-align: left;
+  font-size: 3vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  opacity: 20%;
+  letter-spacing: 1vw;
+}
+
+main div img.left {
+  filter: contrast(120%);
+  margin: 5px;
+  border-corner-shape: bevel;
+  border-radius: 0% 90% 0% 90%;
+  float: left;
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+}
+/*
+main div img.right {
+  filter: contrast(120%);
+  margin: 5px;
+  border-corner-shape: bevel;
+  border-radius: 90% 0% 90% 0%;
+  float: left;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+main div img.bottom-left {
+  filter: contrast(120%);
+  margin: 5px;
+  border-corner-shape: bevel;
+  border-radius: 90% 0% 90% 0%;
+  float: left;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+main div img.bottom-right {
+  filter: contrast(120%);
+  margin: 5px;
+  border-corner-shape: bevel;
+  border-radius: 0% 90% 0% 90%;
+  float: left;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+*/
